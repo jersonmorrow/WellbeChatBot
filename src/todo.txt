@@ -1,0 +1,9 @@
+1. Setup redux - manage our aplication state
+2. Setup reducers and action
+3. Setup chat
+4. Chat queue
+5. Display the messages to the user 
+6. Get and handle sessions_ids
+7. Handle sending our users message to the aplication
+8. Adding bot responses to the queue
+9. formmating
