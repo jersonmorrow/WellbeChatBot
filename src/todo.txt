@@ -1,6 +1,6 @@
 1. Setup redux - manage our aplication state / DONE
 2. Setup chat / DONE
-3. Setup reducers and action
+3. Setup reducers and action / DONE
 4. Chat queue
 5. Display the messages to the user 
 6. Get and handle sessions_ids

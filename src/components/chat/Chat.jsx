@@ -1,15 +1,21 @@
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
 
-const Chat = () => {
+// Import action
+import { userMessage } from '../../actions/watson';
+
+const Chat = ({ chat, userMessage }) => {
   //handle users message
   const [message, setMessage] = useState('');
 
   // function that handle user submisions
   const handleClick = async (e) => {
     const code = e.keyCode || e.which;
+    const keyEnter = 13;
 
-    if (code === 13) {
+    if (code === keyEnter) {
       console.log(message);
+      userMessage(message);
       setMessage('');
     }
   };
@@ -30,4 +36,8 @@ const Chat = () => {
   );
 };
 
-export default Chat;
+const mapStateToProps = (state) => ({
+  chat: state.watson.messages,
+});
+
+export default connect(mapStateToProps, { userMessage })(Chat);
