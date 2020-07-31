@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 
 // Import chat component
+import Chat from './components/chat/Chat';
 // Connect aplication to redux
 
 const App = () => {
@@ -14,7 +15,7 @@ const App = () => {
     <Provider store={store}>
       <div className="App">
         {/* [Insert] Chat component HERE! */}
-        hello world!
+        <Chat />
       </div>
     </Provider>
   );
