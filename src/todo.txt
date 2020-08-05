@@ -2,7 +2,7 @@
 2. Setup chat / DONE
 3. Setup reducers and action / DONE
 4. Chat queue / DONE
-5. Display the messages to the user 
+5. Display the messages to the user / DONE
 6. Get and handle sessions_ids
 7. Handle sending our users message to the aplication
 8. Adding bot responses to the queue

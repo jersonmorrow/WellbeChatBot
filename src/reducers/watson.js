@@ -1,5 +1,10 @@
 // import types
-import { INPUT_SUCCESS, INPUT_FAIL } from '../actions/types';
+import {
+  INPUT_SUCCESS,
+  INPUT_FAIL,
+  SESSION_SUCCESS,
+  SESSION_FAIL,
+} from '../actions/types';
 
 // Initial state
 const initialState = {
@@ -22,6 +27,16 @@ export default (state = initialState, action) => {
       return {
         ...state,
       };
+    case SESSION_SUCCESS:
+      localStorage.setItem('session', payload['session_id']);
+      return {
+        ...state,
+      };
+    case SESSION_FAIL:
+      return {
+        ...state,
+      };
+
     default:
       return {
         ...state,
